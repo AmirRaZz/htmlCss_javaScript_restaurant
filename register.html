@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register_style.css">
+</head>
+
+<body dir="rtl">
+    <div id="register-main-box">
+        <div id="popup-form" class="active">
+            <form action="" id="register-form" class="active">
+                <h2>فرم عضویت در رستوران</h2>
+                <div>
+                    نام <input type="text" class="form-control" data-label="نام" data-validation="notEmpty">
+                </div>
+                <div>
+                    نام خانوادگی <input type="text" class="form-control" data-label="نام خانوادگی" data-validation="notEmpty">
+                </div>
+                <div>
+                    موبایل <input type="text" class="form-control" data-label="موبایل" data-validation="notEmpty isMobile">
+                </div>
+                <div>
+                    <button type="submit" class="form-control">ثبت نام</button>
+                </div>
+                <ul class="summery-validation">
+                    <!-- <li>نام خود را وارد کنید.</li> -->
+                </ul>
+            </form>
+            <div class="btn-popup" class="active"></div>
+        </div>
+    </div>
+
+    <script src="js/register_script.js"></script>
+</body>
+
+</html>

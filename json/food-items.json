@@ -1,0 +1,51 @@
+{
+    "items": [{
+            "id": "tomato",
+            "name": "گوجه فرنگی",
+            "image": "images/food-items/tomato.webp",
+            "price": 2000,
+            "calorie": 10,
+            "qty": 5
+        },
+        {
+            "id": "mushroom",
+            "name": "قارچ",
+            "image": "images/food-items/mushroom.png",
+            "price": 3000,
+            "calorie": 5,
+            "qty": 15
+        },
+        {
+            "id": "olive",
+            "name": "زیتون",
+            "image": "images/food-items/olive.png",
+            "price": 1500,
+            "calorie": 10,
+            "qty": 5
+        },
+        {
+            "id": "mozzarella",
+            "name": "پنیر پیتزا",
+            "image": "images/food-items/mozzarella.png",
+            "price": 10000,
+            "calorie": 40,
+            "qty": 30
+        },
+        {
+            "id": "peperoni",
+            "name": "پپرونی",
+            "image": "images/food-items/peperoni.png",
+            "price": 15000,
+            "calorie": 50,
+            "qty": 40
+        },
+        {
+            "id": "pepperoni",
+            "name": "فلفل دلمه",
+            "image": "images/food-items/green-pepperoni.png",
+            "price": 1500,
+            "calorie": 5,
+            "qty": 5
+        }
+    ]
+}

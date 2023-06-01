@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+}
+
+.pizza-title {
+    text-align: center;
+    color: green;
+    margin: 50px 10px 10px;
+}
+
+.pizza-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    .item-box {
+        background: #f2f8f6;
+        width: 15%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        margin: 10px;
+        box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .main-box {
+        width: 70%;
+        margin: 10px;
+        box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            position: relative;
+            background: url('../images/food-items/Pizza-Dough.png');
+            background-position: center center;
+            background-size: cover;
+            width: 440px;
+            height: 440px;
+            border-radius: 50%;
+        }
+    }
+    .calc-box {
+        width: 15%;
+        background: #f2f8f6;
+        margin: 10px;
+        box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .calc-item {
+            margin: 5px;
+            text-align: center;
+            h3 {
+                margin: 10px 0px 0px;
+            }
+            div {
+                margin: 10px auto;
+                width: 75%;
+                box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 50%;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                span {
+                    color: red;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.img-box {
+    background: #fff;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 85px;
+    height: 85px;
+}
+
+.img-item {
+    width: 80px;
+    height: 80px;
+}

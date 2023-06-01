@@ -1,0 +1,583 @@
+                                        @import "layout";
+                                        @import "base";
+                                        @import "links";
+                                        @import "icons";
+                                        @import "fonts";
+                                        @import "extends";
+                                        * {
+                                            -webkit-box-sizing: border-box;
+                                            -moz-box-sizing: border-box;
+                                            box-sizing: border-box;
+                                            margin: 0;
+                                        }
+                                        
+                                        *:before,
+                                        *:after {
+                                            -webkit-box-sizing: border-box;
+                                            -moz-box-sizing: border-box;
+                                            box-sizing: border-box;
+                                        }
+                                        
+                                        html {
+                                            font-size: 10px;
+                                            -webkit-tap-highlight-color: transparent;
+                                        }
+                                        
+                                        body {
+                                            font-family: "primary-font", "segoe ui", "tahoma";
+                                            direction: rtl;
+                                            font-size: 14px;
+                                            line-height: 1.71429;
+                                            color: #9b9b9b;
+                                            background-color: $body-bg-color;
+                                        }
+                                        
+                                        html *:last-child {
+                                            margin-bottom: 0;
+                                        }
+                                        
+                                        .text-right {
+                                            text-align: right;
+                                        }
+                                        
+                                        .text-left {
+                                            text-align: left;
+                                        }
+                                        
+                                        .text-center {
+                                            text-align: center;
+                                        }
+                                        
+                                        .container {
+                                            width: 75%;
+                                            margin: 0 auto;
+                                        }
+                                        
+                                        // Header
+                                        .page-head {
+                                            height: 100px;
+                                            .top-menu {
+                                                height: 65%;
+                                                @include flex-center;
+                                                .top-menu-aside-right {
+                                                    width: 40%;
+                                                    @include flex-start;
+                                                }
+                                                .top-menu-aside-left {
+                                                    width: 60%;
+                                                    ul.list-links {
+                                                        height: 100%;
+                                                        display: grid;
+                                                        grid-template-columns: 30% 40% 25%;
+                                                        gap: 8px;
+                                                        li.list-item {
+                                                            margin-right: 10px;
+                                                            list-style: none;
+                                                            .unit-horizontal {
+                                                                @include flex-center;
+                                                                .unit-right {
+                                                                    margin-left: 12px;
+                                                                }
+                                                            }
+                                                            .list-inline {
+                                                                display: flex;
+                                                                li {
+                                                                    list-style: none;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        .navbar-box {
+                                            position: -webkit-sticky;
+                                            /* Safari */
+                                            position: sticky;
+                                            top: 0;
+                                            z-index: 10;
+                                        }
+                                        
+                                        .navbar {
+                                            height: 60px;
+                                            border-radius: 50px;
+                                            background: $navbar-color;
+                                            display: grid;
+                                            grid-template-columns: 90% 10%;
+                                            align-items: center;
+                                            padding-left: 20px;
+                                            padding-right: 20px;
+                                            .navbar-nav {
+                                                display: flex;
+                                                li {
+                                                    margin-left: 60px;
+                                                    list-style: none;
+                                                    a {
+                                                        // font-size:  !important;
+                                                        color: $white-color;
+                                                        font-weight: bold;
+                                                    }
+                                                    .active {
+                                                        background-color: $navbar-light-color;
+                                                        padding: 3px 10px;
+                                                    }
+                                                }
+                                            }
+                                            .navbar-shop {
+                                                text-align: left;
+                                                font-size: 1.5em;
+                                                a {
+                                                    span.mdi-cart-outline {
+                                                        margin: 0;
+                                                    }
+                                                    font-size: 20px;
+                                                    color: $black-color;
+                                                    &:hover {
+                                                        color: $white-color;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        // End header
+                                        // Slider
+                                        .slider {
+                                            text-align: center;
+                                            position: relative;
+                                            z-index: 1;
+                                            top: -30px;
+                                            height: 700px;
+                                            color: $white-color;
+                                            #slide-one {
+                                                @include flex-center;
+                                                flex-direction: column;
+                                                width: 100%;
+                                                height: 100%;
+                                                // background-color: blue;
+                                                background: url('../images/home-slide-3-1920x800.jpg') no-repeat;
+                                                background-size: cover;
+                                                .slider-text {
+                                                    height: 400px;
+                                                    h1 {
+                                                        font-family: "secondary-font";
+                                                        font-size: 5em;
+                                                        font-weight: 700;
+                                                    }
+                                                    h3 {
+                                                        font-family: "secondary-font";
+                                                        font-size: 2em;
+                                                        font-weight: 600;
+                                                    }
+                                                    p {
+                                                        margin: 0 auto;
+                                                        width: 70%;
+                                                    }
+                                                    a {
+                                                        display: inline-block;
+                                                        background-color: #bfdb39;
+                                                        padding: 15px 40px;
+                                                        border-radius: 40px;
+                                                        margin-top: 30px;
+                                                        color: $white-color;
+                                                        text-decoration: none;
+                                                        font-weight: 700;
+                                                        font-size: 1.4em;
+                                                        &:hover {
+                                                            background-color: $navbar-light-color;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        // End Slider
+                                        // Welcome
+                                        .welcome-info {
+                                            margin: 0 auto;
+                                            width: 50%;
+                                            h3 {
+                                                @include section-title($black-color);
+                                            }
+                                            p {
+                                                font-family: "primary-font";
+                                                font-size: 14px;
+                                                line-height: 1.7;
+                                                color: #9b9b9b;
+                                            }
+                                        }
+                                        
+                                        // End Welcome
+                                        // Us Food Menu
+                                        .bg-image-6 {
+                                            background-image: url("../images/home-slide-4-1920x800.jpg");
+                                            background-attachment: fixed;
+                                            background-size: cover;
+                                        }
+                                        
+                                        .main-food-box {
+                                            padding-top: 100px;
+                                            h3 {
+                                                @include section-title($white-color);
+                                                padding-bottom: 50px
+                                            }
+                                            .main-foods {
+                                                @include flex-center;
+                                                flex-wrap: wrap;
+                                                gap: 44px;
+                                                padding-bottom: 200px;
+                                                .food-box {
+                                                    position: relative;
+                                                    background-color: $white-color;
+                                                    border-radius: 5px;
+                                                    overflow: hidden;
+                                                    img {
+                                                        margin: 20px 20px;
+                                                    }
+                                                    .caption {
+                                                        position: relative;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: center;
+                                                        background-color: #bfdb39;
+                                                        height: 80px;
+                                                        width: 100%;
+                                                        border-radius: 0 0 5px 5px;
+                                                        text-align: right;
+                                                        transition: all 0.5s;
+                                                        transform: rotate(-5deg) scale(1.1);
+                                                        transform-origin: top right;
+                                                    }
+                                                    .title {
+                                                        position: absolute;
+                                                        transform: rotate(+5deg) scale(1.1);
+                                                        padding-right: 20px;
+                                                        width: 25%;
+                                                        transition: transform 0.3s;
+                                                        min-height: 36px;
+                                                        font-size: 20px;
+                                                        font-weight: 700;
+                                                        font-family: "secondary-font", "primary-font", "segoe ui", "tahoma";
+                                                        transform-origin: top right;
+                                                        a {
+                                                            text-decoration: none;
+                                                            color: $white-color;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        // End Us Food Menu
+                                        // Banner
+                                        .banner {
+                                            position: relative;
+                                            z-index: 1;
+                                            top: -30px;
+                                            width: 100%;
+                                            height: 350px;
+                                            background: url('../images/bg-image-breadcrumbs.jpg');
+                                            background-size: cover;
+                                            @include flex-center;
+                                            flex-direction: column;
+                                            h1 {
+                                                text-align: center;
+                                                color: $white-color;
+                                                font-size: 5em;
+                                                font-family: secondary-font;
+                                            }
+                                            ul.breadcrumbs {
+                                                @include flex-center;
+                                                li {
+                                                    margin-left: 40px;
+                                                    color: $white-color;
+                                                    list-style: none;
+                                                    a {
+                                                        text-decoration: none;
+                                                        color: $green-color;
+                                                        font-family: 'primary-font';
+                                                        font-size: 1.4em;
+                                                        position: relative;
+                                                        &::after {
+                                                            content: "\f400";
+                                                            position: absolute;
+                                                            right: 40px;
+                                                            top: 53%;
+                                                            left: 9px;
+                                                            display: inline-block;
+                                                            color: rgba(255, 255, 255, 0.5);
+                                                            font: 400 18px/18px 'Material Design Icons';
+                                                            -webkit-transform: translateY(-50%);
+                                                            transform: translateY(-50%);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        // End Banner
+                                        // Product Menu
+                                        #main-box-product-menu {
+                                            width: 75%;
+                                            // height: 600px;
+                                            margin: 100px auto;
+                                            background: url('../images/bg-menu-7.jpg');
+                                            background-size: cover;
+                                            padding: 15px;
+                                            &>div {
+                                                width: 100%;
+                                                height: 100%;
+                                                border: 1px solid $gray-color;
+                                                border-radius: 10px;
+                                                padding: 100px 50px;
+                                                .product-menu-info {
+                                                    ul {
+                                                        color: $white-color;
+                                                        display: grid;
+                                                        grid-template-columns: 1fr 1fr;
+                                                        gap: 50px;
+                                                        padding: 30px;
+                                                        li {
+                                                            list-style: none;
+                                                            border: 1px solid $gray-color;
+                                                            border-radius: 10px;
+                                                            box-shadow: 1px 1px 3px $aliceblue-color;
+                                                            padding: 10px;
+                                                            .food-info {
+                                                                @include flex-space-between;
+                                                                font-size: 1.5em;
+                                                                .food-title {
+                                                                    font-family: "secondary-font";
+                                                                    display: inline-block;
+                                                                }
+                                                                .food-price {}
+                                                            }
+                                                            .food-content {
+                                                                font-size: 1em;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        // End Product Menu
+                                        //----------------------------------------------------------------
+                                        // Product Detail
+                                        .product-detail {
+                                            padding: 20px;
+                                            display: flex;
+                                            gap: 10px;
+                                            .product-detail-gallery {
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 40%;
+                                                .large-image {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: baseline;
+                                                    overflow: hidden;
+                                                    height: 400px;
+                                                    width: 100%;
+                                                    img {
+                                                        width: 440px;
+                                                    }
+                                                }
+                                                .small-image {
+                                                    @include flex-center;
+                                                    position: relative;
+                                                    height: 100px;
+                                                    cursor: pointer;
+                                                    img {
+                                                        width: 80px;
+                                                        height: 80px;
+                                                        margin: 10px;
+                                                        padding: 10px;
+                                                        border-radius: 5px;
+                                                        box-shadow: 0px 0px 5px #ccc;
+                                                    }
+                                                }
+                                            }
+                                            &-info {
+                                                width: 60%;
+                                                padding: 20px;
+                                                .title {
+                                                    @include flex-start;
+                                                    .font-h4 {
+                                                        font-size: 36px;
+                                                        font-weight: 700;
+                                                        color: $black-color;
+                                                    }
+                                                    .badge {
+                                                        height: 45px;
+                                                        margin-right: 50px;
+                                                        text-align: center;
+                                                        padding: 5px 10px;
+                                                        color: $white-color;
+                                                        font-size: 20px;
+                                                        border: 1px solid $white-color;
+                                                        background-color: $navbar-color;
+                                                    }
+                                                }
+                                                .detail {
+                                                    margin-top: 30px;
+                                                    padding-top: 20px;
+                                                    border-top: 1px solid $gray-color;
+                                                    .price-list {
+                                                        padding: 0;
+                                                        li {
+                                                            list-style: none;
+                                                            margin-top: 10px;
+                                                            .price {
+                                                                color: $navbar-color;
+                                                                del {
+                                                                    font-size: 24px;
+                                                                    margin-left: 10px;
+                                                                }
+                                                                span {
+                                                                    font-size: 20px;
+                                                                }
+                                                            }
+                                                            .size {
+                                                                background-color: $orange-color;
+                                                                padding: 10px;
+                                                                margin-right: 5px;
+                                                                border-radius: 50%;
+                                                                color: $white-color;
+                                                            }
+                                                        }
+                                                    }
+                                                    .progress {
+                                                        padding: 30px 10px;
+                                                        .progress-box {
+                                                            height: 60px;
+                                                            padding: 5px;
+                                                            .progress-bar {
+                                                                border: 1px solid #ddd;
+                                                                border-radius: 10px;
+                                                                position: relative;
+                                                                height: 25px;
+                                                                .progress-bar-fill {
+                                                                    position: absolute;
+                                                                    background-color: $navbar-color;
+                                                                    border-radius: 10px;
+                                                                    width: 43%;
+                                                                    height: 100%;
+                                                                }
+                                                                .progress-text {
+                                                                    padding: 0 10px;
+                                                                    position: absolute;
+                                                                    color: $black-color;
+                                                                    left: 10px;
+                                                                }
+                                                                .progress-value {
+                                                                    padding: 0 10px;
+                                                                    position: absolute;
+                                                                    height: 100%;
+                                                                    color: $white-color;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .add-shopcart {
+                                                    @include flex-space-around;
+                                                    .number {
+                                                        @extend .input-number-box;
+                                                        input[type='number'] {
+                                                            @extend .input-number;
+                                                        }
+                                                        #plus {
+                                                            @extend .input-number-plus;
+                                                        }
+                                                        #minus {
+                                                            @extend .input-number-minus;
+                                                        }
+                                                    }
+                                                    .btn-add {
+                                                        width: 40%;
+                                                        height: 50px;
+                                                        color: $white-color;
+                                                        background-color: $navbar-color;
+                                                        border-color: $navbar-color;
+                                                        border-radius: 30px;
+                                                        font-size: 14px;
+                                                        font-weight: 700;
+                                                        border-width: 3px;
+                                                        padding: 10px 28px;
+                                                        text-align: center;
+                                                        cursor: pointer;
+                                                        &:hover {
+                                                            background-color: $orange-color;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        // End Product Detail
+                                        // ShopCart Items
+                                        .container {
+                                            margin-top: 50px;
+                                            #shopcart-header {
+                                                padding: 0 20px;
+                                                border-bottom: 1px solid $gray-color;
+                                                margin-bottom: 20px;
+                                                color: $black-color;
+                                                font-family: 'secondary-font';
+                                                @include flex-space-between;
+                                                #shopcart-title {
+                                                    font-size: 30px;
+                                                }
+                                                a {
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                            .table {
+                                                width: 100%;
+                                                tbody tr {
+                                                    border-bottom: 1px solid black;
+                                                }
+                                                tr {
+                                                    font-size: 20px;
+                                                    color: $black-color;
+                                                    $width: 150px 180px 300px 200px 100px 150px 100px;
+                                                    $i: 1;
+                                                    @each $w in $width {
+                                                        .td-#{$i} {
+                                                            width: $w;
+                                                            @if($i==1) {
+                                                                .number {
+                                                                    @extend .input-number-box;
+                                                                    width: 90%;
+                                                                    margin: 0 auto;
+                                                                    input[id^='number_'] {
+                                                                        @extend .input-number;
+                                                                    }
+                                                                    span[id^='plus_'] {
+                                                                        @extend .input-number-plus;
+                                                                    }
+                                                                    span[id^='minus_'] {
+                                                                        @extend .input-number-minus;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        $i:$i+1;
+                                                    }
+                                                }
+                                            }
+                                            #shopcart-footer {
+                                                display: flex;
+                                                justify-content: flex-end;
+                                                font-size: 24px;
+                                                margin-top: 20px;
+                                                strong {
+                                                    display: block;
+                                                    margin-right: 50px;
+                                                    color: black
+                                                }
+                                            }
+                                        }
+                                        
+                                        // End ShopCart Items

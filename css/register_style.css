@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "primary-font";
+  src: url("../../fonts/farsi-fonts/iran-yekan-500.eot");
+  src: url("../../fonts/farsi-fonts/iran-yekan-500.eot?#iefix") format("embedded-opentype"), url("../../fonts/farsi-fonts/iran-yekan-500.woff2") format("woff2"), url("../../fonts/farsi-fonts/iran-yekan-500.woff") format("woff"), url("../../fonts/farsi-fonts/iran-yekan-500.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "secondary-font";
+  src: url("../../fonts/farsi-fonts/iran-sans-700.eot");
+  src: url("../../fonts/farsi-fonts/iran-sans-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/farsi-fonts/iran-sans-700.woff2") format("woff2"), url("../../fonts/farsi-fonts/iran-sans-700.woff") format("woff"), url("../../fonts/farsi-fonts/iran-sans-700.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Material Design Icons";
+  src: url("../fonts/materialdesignicons-webfont.eot?v=1.4.57");
+  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=1.4.57") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=1.4.57") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=1.4.57") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=1.4.57") format("truetype"), url("../fonts/materialdesignicons-webfont.svg?v=1.4.57#materialdesigniconsregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Thin Regular";
+  src: url("../fonts/Thin-Regular.eot?66413286");
+  src: url("../fonts/Thin-Regular.eot?66413286#iefix") format("embedded-opentype"), url("../fonts/Thin-Regular.woff?66413286") format("woff"), url("../fonts/Thin-Regular.ttf?66413286") format("truetype"), url("../fonts/Thin-Regular.svg?66413286#thin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Restaurant Regular";
+  src: url("../fonts/Restaurant-Regular.eot?87209526");
+  src: url("../fonts/Restaurant-Regular.eot?87209526#iefix") format("embedded-opentype"), url("../fonts/Restaurant-Regular.woff?87209526") format("woff"), url("../fonts/Restaurant-Regular.ttf?87209526") format("truetype"), url("../fonts/Restaurant-Regular.svg?87209526#mercury") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+body {
+  font-family: "primary-font", "segoe ui", "tahoma";
+  box-sizing: border-box;
+}
+
+#register-main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#popup-form {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup-form.active {
+  width: 450px;
+  height: 500px;
+}
+
+#register-form {
+  width: 90%;
+  visibility: hidden;
+}
+#register-form.active {
+  visibility: visible;
+}
+
+.btn-popup {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-popup.active {
+  bottom: -75px;
+}
+.btn-popup.active::before {
+  content: "+";
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.btn-popup::before {
+  content: "×";
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #a1a1a1;
+  margin: 5px 0 20px;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+
+#register-form h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+ul.summery-validation {
+  margin-top: 0;
+}
+ul.summery-validation li {
+  font-size: 12px;
+  color: red;
+}/*# sourceMappingURL=register_style.css.map */

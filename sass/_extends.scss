@@ -1,0 +1,48 @@
+.input-number-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #c9ced2;
+}
+
+.input-number {
+    width: 20%;
+    margin: 0 10px;
+    text-align: center;
+    appearance: textfield;
+    color: $black-color;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+}
+
+.input-number-plus {
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: $black-color;
+    transition: .3s all ease;
+    &::after {
+        content: "+";
+    }
+}
+
+.input-number-minus {
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: $black-color;
+    transition: .3s all ease;
+    &::before {
+        content: "-";
+    }
+}

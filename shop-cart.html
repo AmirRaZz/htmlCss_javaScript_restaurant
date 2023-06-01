@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style_new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body onscroll="ChangeScrollY()">
+    <!-- Header -->
+    <header class="container page-head">
+        <div class="top-menu">
+            <div class="top-menu-aside-right">
+                <img src="../images/brand-232x49.png" alt="" width="232" height="49">
+            </div>
+            <div class="top-menu-aside-left">
+                <ul class="list-links">
+                    <li class="list-item">
+                        <div class="unit-horizontal">
+                            <div class="unit-right">
+                                <span class="icon icon-circle icon-gray-dark icon-xs mdi mdi-map-marker text-middle"></span>
+                            </div>
+                            <div class="unit-left">
+                                <a href="#" class="link link-default">
+                                        ملایر، خیابان شهدا
+                                        <br>
+                                        مجتمع آرین، طبقه 3
+                                    </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="unit-horizontal">
+                            <div class="unit-right">
+                                <span class="icon icon-circle icon-gray-dark icon-xs mdi mdi-phone text-middle"></span>
+                            </div>
+                            <div class="unit-left">
+                                <a href="callto:#" class="link link-default">
+                                        989123456789+
+                                        <br>
+                                        شنبه تا پنجشنبه: 8 صبح - 10 شب
+                                    </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <ul class="list-inline ">
+                            <li>
+                                <a href="#" class="link link-silver-light">
+                                    <span class="icon icon-md-mod-1 mdi mdi-instagram"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link link-silver-light">
+                                    <span class="icon icon-md-mod-1 mdi mdi-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link link-silver-light">
+                                    <span class="icon icon-md-mod-1 mdi mdi-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link link-silver-light">
+                                    <span class="icon icon-md-mod-1 mdi mdi-linkedin"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="navbar-box" id="navbar-box">
+        <div class="navbar container" id="navbar">
+            <ul class="navbar-nav">
+                <li class="active">
+                    <a class="link active" href="index1.html">خانه</a>
+                </li>
+                <li>
+                    <a class="link" href="about.html">درباره ما</a>
+                </li>
+                <li>
+                    <a class="link" href="#">منو</a>
+                </li>
+                <li>
+                    <a class="link" href="search-result.html">جستجو</a>
+                </li>
+                <li>
+                    <a class="link" href="#">گالری</a>
+                </li>
+                <li>
+                    <a class="link" href="pizza.html">تهیه پیتزا</a>
+                </li>
+                <li>
+                    <a class="link" href="register.html">عضویت</a>
+                </li>
+            </ul>
+            <div class="navbar-shop">
+                <a href="#" class="link link-shop link-default">
+                    <span class="icon icon-sm mdi mdi-cart-outline"></span>
+                    <span class="text-white" id="shopcart-count">(2)</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- ShopCart Items -->
+    <div class="container">
+        <div id="shopcart-header">
+            <div id="shopcart-title"><span id="shopcart-count2"></span> مورد در سبد خرید</div>
+            <div><a href="index1.html">برگشت</a></div>
+        </div>
+        <table class="table" id="shopcart-table">
+            <!-- <tr>
+                <td class="td-1">
+                    <div class="number">
+                        <span id="plus_1" onclick="plusNumber(1)"></span>
+                        <input type="number" id="number_1" data-zeros="true" value="1" min="1" max="20" readonly="">
+                        <span id="minus_1" onclick="minusNumber(1)"></span>
+                    </div>
+                </td>
+                <td class="td-2">
+                    <img src="images/shop-cart-1-130x130.png" alt="" width="130" height="130">
+                </td>
+                <td class="td-3">سبد مخلوط میوه</td>
+                <td class="td-4">34,000 تومان</td>
+                <td class="td-5">3 عدد</td>
+                <td class="td-6">
+                    <a onclick="removeFromMemory(0)"><i class="fa fa-times"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-1">
+                    <div class="number">
+                        <span id="plus_2" onclick="plusNumber(2)"></span>
+                        <input type="number" id="number_2" data-zeros="true" value="1" min="1" max="20" readonly="">
+                        <span id="minus_2" onclick="minusNumber(2)"></span>
+                    </div>
+                </td>
+                <td class="td-2">
+                    <img src="images/shop-cart-1-130x130.png" alt="" width="130" height="130">
+                </td>
+                <td class="td-3">سبد مخلوط میوه</td>
+                <td class="td-4">34,000 تومان</td>
+                <td class="td-5">3 عدد</td>
+                <td class="td-6">
+                    <a onclick="removeFromMemory(1)"><i class="fa fa-times"></i></a>
+                </td>
+            </tr>-->
+
+        </table>
+        <div id="shopcart-footer">
+            <span>جمع کل</span>
+            <strong> <span id="total-price">240,000</span> تومان</strong>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <!-- End ShopCart Items -->
+    <script src="js/myscript.js"></script>
+    <script src="js/myscript4.js"></script>
+</body>
+
+</html>
